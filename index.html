@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>To-Do List</title>
+</head>
+<body>
+
+
+    <button class="openModal" id="openModal">
+        <i data-lucide="plus"></i>
+    </button>
+
+    <!--Modal-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar">&times;</span>
+            <div class="issueText">
+                <input type="text" id="taskInput" placeholder="Issue Title" class="issueTitle">
+                <textarea type="text" id="taskInputDesc" placeholder="Add description" class="issueDesc"></textarea>
+            </div>
+
+            <div class="modal-bottom">
+                <div>
+                    <button id="openModal-priority"> Priority</button>
+                    
+                    <div class="modal-priority" id="modal-priority">
+                        <div class="modal-priority-content">
+                            <span>Low</span>
+                            <span>Medium</span>
+                            <span>High</span>
+                            <span>Uregent</span>
+                            <Span>No priority</Span>
+                        </div>
+                    </div>
+                   </div>
+
+                <div>
+                    <button id="openModal-status"> Status</button>
+                    
+                    <div class="modal-status">
+                        <div class="modal-status-content">
+                            <span>To-Do</span>
+                            <span>In progress</span>
+                            <span>Done</span>
+
+                        </div>
+                    </div>
+                  </div>
+                
+                <button id="addBtn" class="btnCreate">Create</button>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <ul id="taskList"></ul>
+
+        
+        
+        <i data-lucide="circle-dashed"></i>
+        <i data-lucide="circle-dot"></i>
+        <i data-lucide="circle-dot-dashed"></i>
+        
+        
+        <i data-lucide="trash-2"></i>
+        <i data-lucide="signal-medium"></i>
+        <i data-lucide="signal-low"></i>
+        <i data-lucide="signal-high"></i>
+    </div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>

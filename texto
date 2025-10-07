@@ -1,0 +1,37 @@
+1. Objectivo da To-Do List
+Premitir ao usuario:
+    - Adicionar tarefas
+    - Marcar tarfeas como concluidas
+    - Remover tarefas
+    - (Opcional) Salvar as tarefas no navegador (com localstorage)
+
+2. Componentes principais
+HTML (estrutura)
+Cria os elementos visuais:
+    - Um campo de texto (input) para digitar a tarefa
+    - Um botao para adicionar a tarefa
+    - Uma lista (<ul>) onde as tarefas serao exibidas
+
+    Exemplo:
+        <input type="text" id="taskInput" placeholder="Digite a sua tarefa">
+        <button id="addBtn">Adicionar</button>
+        <ul id="taskList></ul>
+    
+CSS (estilo)
+Dar aparencia a lista:
+    - Espacamento entre tarefas
+    - Estilo diferente para tarefas concluidas (riscadas)
+    - Botao de remover
+
+    Exemplo:
+        .completed{
+            text-decoration: line-through;
+            color: gray;
+        }
+
+Javascript (Funcionalidade)
+Adicionar tarefas:
+    - Capturar o texto digitado
+    - Cria um <li> com esse texto
+    - Adiciona o <li> dentro da <ul>
+    
