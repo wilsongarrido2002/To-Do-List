@@ -19,8 +19,13 @@ function criarTarefa(texto) {
 
   // Cria um botão de excluir
   const botaoExcluir = document.createElement('button')
-  botaoExcluir.textContent = 'X'
+  botaoExcluir.innerHTML = '<i data-lucide="trash-2"></i>'
   botaoExcluir.classList.add('btn-excluir')
+
+  li.appendChild(botaoExcluir)
+  taskList.appendChild(li)
+
+  lucide.createIcons()
 
   //Remover tarefa
 

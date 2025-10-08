@@ -10,6 +10,7 @@
 
 
     <button class="openModal" id="openModal">
+        <span class="text">NOVO</span>
         <i data-lucide="plus"></i>
     </button>
 
@@ -24,21 +25,25 @@
 
             <div class="modal-bottom">
                 <div>
-                    <button id="openModal-priority"> Priority</button>
+                    <button id="openModal-priority" class="btn-priority">
+                        <i data-lucide="ellipsis"></i> Priority
+                    </button>
                     
                     <div class="modal-priority" id="modal-priority">
                         <div class="modal-priority-content">
                             <span>Low</span>
                             <span>Medium</span>
                             <span>High</span>
-                            <span>Uregent</span>
+                            <span>Urgent</span>
                             <Span>No priority</Span>
                         </div>
                     </div>
                    </div>
 
                 <div>
-                    <button id="openModal-status"> Status</button>
+                    <button id="openModal-status" class="btn-status">
+                        <i data-lucide="circle-dashed" style="width: 14px;"></i>Status
+                    </button>
                     
                     <div class="modal-status">
                         <div class="modal-status-content">
@@ -65,10 +70,12 @@
         <i data-lucide="circle-dot-dashed"></i>
         
         
-        <i data-lucide="trash-2"></i>
-        <i data-lucide="signal-medium"></i>
+        
+        <i data-lucide="signal-medium" style="color: #2196f3;"></i>
         <i data-lucide="signal-low"></i>
         <i data-lucide="signal-high"></i>
+        <i data-lucide="shield-alert"></i>
+        
     </div>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>lucide.createIcons();</script>
